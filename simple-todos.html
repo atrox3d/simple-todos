@@ -8,12 +8,14 @@
             <h1>To do list</h1>
         </header>
 
-    <ul>
-        {{#each tasks}}
-            {{> task}}
-        {{/each}}
-    </ul>
-</div>
+        <form class="new-task">
+            <input type="text" name="text" placeholder="type to add new tasks">
+        </form>
+
+        <ul>
+            {{#each tasks}} {{> task}} {{/each}}
+        </ul>
+    </div>
 </body>
 
 <template name="task">
